@@ -68,4 +68,13 @@ btnRemove.onclick=function(){
 
  // task 3 new list 
 
- 
+ let newlistBtn=document.getElementById("btn-newlist")
+
+newlistBtn=onclick=function(){
+    let li = document.querySelectorAll(".li-list")
+    let div =document.createElement("div")
+    div.className="div"
+    let ul = document.createElement("ul")
+    ul.className="list"
+    div.append(ul)
+    let newarr=Array.from(li).map(item=>item.textContent)
