@@ -44,3 +44,12 @@ btnRemove.onclick=function(){
   let vurma=document.getElementById("btn-vurma")
   let cixma=document.getElementById("btn-cixma")
   let toplama=document.getElementById("btn-toplama")
+
+  bolme.onclick=function(){
+    let num1value= number1.value;
+    let num2value=number2.value;
+    let sum=num1value / num2value;
+    result.value=sum;
+    number1.value="";
+    number2.value="";
+ }
