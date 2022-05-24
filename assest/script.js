@@ -53,3 +53,11 @@ btnRemove.onclick=function(){
     number1.value="";
     number2.value="";
  }
+ vurma.onclick=function(){
+    let num1value= number1.value;
+    let num2value=number2.value;
+    let sum=num1value * num2value;
+    result.value=sum;
+    number1.value="";
+    number2.value="";
+ }
