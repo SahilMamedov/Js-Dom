@@ -18,3 +18,16 @@ let inputcheck=document.createElement("input");
 inputcheck.type="checkbox";
 inputcheck.classList="inputcheck"
 li.append(inputcheck)
+
+btnRemove.onclick=function(){
+
+    let inputchecked= document.querySelectorAll(".inputcheck:checked")
+         inputchecked.forEach(value => {
+             value.parentElement.remove();
+             
+         });
+        
+    }
+  }
+  }
+  
