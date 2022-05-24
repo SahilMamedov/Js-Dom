@@ -65,3 +65,7 @@ btnRemove.onclick=function(){
     number1.value="";
     number2.value="";
  }
+
+ // task 3 new list 
+
+ 
