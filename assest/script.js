@@ -34,4 +34,8 @@ btnRemove.onclick=function(){
 
   // task calculiyator
 
-  
+  // get input
+  let number1=document.getElementById("number-1")
+  let number2=document.getElementById("number-2")
+  let result=document.getElementById("result")
+
