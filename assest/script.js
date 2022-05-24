@@ -70,7 +70,7 @@ btnRemove.onclick=function(){
 
  let newlistBtn=document.getElementById("btn-newlist")
 
-newlistBtn=onclick=function(){
+    newlistBtn=onclick=function(){
     let li = document.querySelectorAll(".li-list")
     let div =document.createElement("div")
     div.className="div"
@@ -78,3 +78,18 @@ newlistBtn=onclick=function(){
     ul.className="list"
     div.append(ul)
     let newarr=Array.from(li).map(item=>item.textContent)
+    newarr.reduce((item,value)=>{
+    
+        item.set(value,(item.get(value)||0)+1);
+        
+        if(item.get(value)===1){
+            let newli = document.createElement("li");
+            newli.innerText=value;
+                 ul.append(newli);
+                 document.body.append(ul)
+        }
+        return item
+        },new Map())
+    
+    }
+    
