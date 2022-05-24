@@ -1,3 +1,5 @@
+// custom task 
+
 let btn = document.getElementById("btn")
 let list=document.getElementById("list")
 let input=document.getElementById("input")
@@ -21,13 +23,15 @@ li.append(inputcheck)
 
 btnRemove.onclick=function(){
 
-    let inputchecked= document.querySelectorAll(".inputcheck:checked")
+    let  inputchecked= document.querySelectorAll(".inputcheck:checked")
          inputchecked.forEach(value => {
-             value.parentElement.remove();
+          value.parentElement.remove();
              
          });
-        
     }
   }
   }
+
+  // task calculiyator
+
   

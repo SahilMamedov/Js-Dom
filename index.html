@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dom-Task</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assest/style.css">
 </head>
 <body>
     <style>
@@ -22,6 +23,16 @@
         .input{
             margin-right:400px;
         }
+        .input-1{
+            margin: 0 200px;
+        }
+        .input-2{
+           margin-right: 400px;
+        }
+        .parent-div{
+margin-top: 50px;
+        }
+       
     </style>
     <div class="container">
         <div style="margin-right:400px; margin-top:50px" class="row">
@@ -33,11 +44,42 @@
         </div>
         <div class="row input">
             <ul id="list" class="list-group">
-                <!-- <li class="list-group-item">An item</li> -->
+               
                 
               </ul>
         </div>
     </div>
+
+     <!-- task calculiyator html -->
+
+<div class="container d-flex parent-div">
+    <div class="input-group mb-3 input-1 ">
+       
+        <input id="number-1" type="text" class="form-control " placeholder="Number-1">
+      </div>
+      
+      <div class="input-group mb-3 input-2">
+        <input id="number-2" type="text" class="form-control " placeholder="Number-2">
+       
+      </div>
+</div>
+
+<div class="container">
+    <div class="button-div">
+        <button id="btn-bolme" type="button" class="btn btn-primary">Bolme</button>
+        <button id="btn-vurma" type="button" class="btn btn-success">Vurma</button>
+        <button id="btn-cixma" type="button" class="btn btn-danger">Cixma</button>
+        <button id="btn-toplama" type="button" class="btn btn-warning">Toplama</button>
+    </div>
+    
+
+</div>
+   <div class="container div-result">
+<div class="input-group mb-3 input-result">
+    <input id="result" type="text" class="form-control " placeholder="Result">
+   
+  </div>
+   </div>
 
    
 
