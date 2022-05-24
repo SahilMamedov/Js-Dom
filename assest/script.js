@@ -39,3 +39,8 @@ btnRemove.onclick=function(){
   let number2=document.getElementById("number-2")
   let result=document.getElementById("result")
 
+  // get button
+  let bolme=document.getElementById("btn-bolme")
+  let vurma=document.getElementById("btn-vurma")
+  let cixma=document.getElementById("btn-cixma")
+  let toplama=document.getElementById("btn-toplama")
