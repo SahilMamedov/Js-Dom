@@ -46,26 +46,22 @@ btnRemove.onclick=function(){
   let toplama=document.getElementById("btn-toplama")
 
   bolme.onclick=function(){
-    let num1value= number1.value;
-    let num2value=number2.value;
-    let sum=num1value / num2value;
-    result.value=sum;
+    result.value=Number(number1.value) / Number(number2.value);
     number1.value="";
     number2.value="";
  }
  vurma.onclick=function(){
-    let num1value= number1.value;
-    let num2value=number2.value;
-    let sum=num1value * num2value;
-    result.value=sum;
+    result.value=Number(number1.value) * Number(number2.value);
     number1.value="";
     number2.value="";
  }
  cixma.onclick=function(){
-    let num1value= number1.value;
-    let num2value=number2.value;
-    let sum=num1value - num2value;
-    result.value=sum;
+    result.value=Number(number1.value) - Number(number2.value);
+    number1.value="";
+    number2.value="";
+ }
+ toplama.onclick=function(){
+    result.value=Number(number1.value) + Number(number2.value);
     number1.value="";
     number2.value="";
  }
