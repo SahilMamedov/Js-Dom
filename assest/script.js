@@ -6,7 +6,7 @@ let input=document.getElementById("input")
 let btnRemove=document.getElementById("btn-remove")
 
 btn.onclick=function(){
-    let checkarr=[];
+    
 let inputValue=input.value.trim();
 
 if(inputValue!=""){
@@ -70,26 +70,28 @@ btnRemove.onclick=function(){
 
  let newlistBtn=document.getElementById("btn-newlist")
 
-    newlistBtn=onclick=function(){
-    let li = document.querySelectorAll(".li-list")
-    let div =document.createElement("div")
-    div.className="div"
-    let ul = document.createElement("ul")
-    ul.className="list"
-    div.append(ul)
-    let newarr=Array.from(li).map(item=>item.textContent)
-    newarr.reduce((item,value)=>{
+    newlistBtn= addEventListener('click',function(){
+      let li = document.querySelectorAll(".li-list")
+      let div =document.createElement("div")
+      div.className="div"
+      let ul = document.createElement("ul")
+      ul.className="list"
+      div.append(ul)
+      let newarr=Array.from(li).map(item=>item.textContent)
+      newarr.reduce((item,value)=>{
+      
+          item.set(value,(item.get(value)||0)+1);
+          
+          if(item.get(value)===1){
+              let newli = document.createElement("li");
+              newli.innerText=value;
+                   ul.append(newli);
+                   document.body.append(ul)
+          }
+          return item
+          },new Map())
+    })
+  
     
-        item.set(value,(item.get(value)||0)+1);
-        
-        if(item.get(value)===1){
-            let newli = document.createElement("li");
-            newli.innerText=value;
-                 ul.append(newli);
-                 document.body.append(ul)
-        }
-        return item
-        },new Map())
     
-    }
     
